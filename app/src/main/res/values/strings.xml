@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Week5Task</string>
+
+    <!-- Required Strings -->
+    <string name="name">Ahmed hassan</string>
+    <string name="job">Engineer</string>
+    <string name="country_code">UK</string>
+    <string name="reviews">(150 Reviews)</string>
+    <string name="rating">4.5</string>
+    <string name="time">3 hr</string>
+    <string name="nationality">Russian</string>
+    <string name="last_appeared">5 Days ago</string>
+    <string name="location_image_description">Location</string>
+    <string name="star_image_description">Star</string>
+</resources>

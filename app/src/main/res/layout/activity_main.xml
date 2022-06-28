@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_height"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/card_container"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/image_dim"
+            android:layout_height="@dimen/image_dim"
+            android:layout_margin="12dp"
+            app:shapeAppearanceOverlay="@style/Rounded_ImageView"
+            android:src="@mipmap/profile"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="11dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/name"
+                android:textSize="@dimen/headline"
+                android:textColor="@color/black"
+                android:fontFamily="@font/dm_sans_bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/job"
+                android:textSize="@dimen/subtitle"
+                android:textColor="@color/job_nationality_color"
+                android:fontFamily="@font/dm_sans_medium" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/country_code"
+                android:textSize="@dimen/title"
+                android:textColor="@color/country_color"
+                android:fontFamily="@font/dm_sans"
+                app:drawableStartCompat="@drawable/ic_location"
+                android:drawablePadding="4dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/reviews"
+                    android:textSize="@dimen/subtitle"
+                    android:fontFamily="@font/dm_sans"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/rating"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/subtitle" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star"
+                    android:contentDescription="@string/star_image_description" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="11dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="4dp"
+                android:paddingHorizontal="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/time"
+                android:textSize="@dimen/subtitle"
+                android:textColor="@color/white"
+                android:fontFamily="@font/dm_sans"
+                android:background="@drawable/time_container"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginBottom="9dp"
+                android:text="@string/nationality"
+                android:textSize="12sp"
+                android:textColor="@color/job_nationality_color"
+                android:fontFamily="@font/dm_sans_medium"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:text="@string/last_appeared"
+                android:textSize="@dimen/subtitle"
+                android:textColor="@color/last_appeared_color"
+                android:fontFamily="@font/dm_sans"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
